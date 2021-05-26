@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        "use strict";
+        let age = prompt("Возраст:",'');
+         let name =prompt("Имя",'');
+        
+        let messageLess18 = "You are not allowed to visit this website";
+        let message18TO22 ="Are you sure you want to continue?";
+       let messageCancel = "You are not allowed to visit this website";
+        
+       
+        
+        if(age < 18){
+
+            alert(messageLess18);
+            
+        }
+
+        if(age >=18 && age <=22 ){
+            
+          let is18To22 = confirm(message18TO22);
+         is18To22? alert(`Welcome, ${name}`) :alert(messageCancel)
+        
+
+        }
+        
+        if(age>22){
+            alert(`Welcome, ${name}`)
+        }
+
+    </script>
+
+
+ 
+</body>
+</html>
